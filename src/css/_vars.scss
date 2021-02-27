@@ -1,0 +1,51 @@
+$defaultFont: "Oswald";
+$fallback: Arial, Helvetica, sans-serif;
+
+$mainFont: $defaultFont, $fallback;
+$defaultFontSize: 16px;
+
+/*breakpoints */
+//размер XL
+$XL: 1260px;
+$XL_width: 960px;
+//размер LG
+$LG: 992px;
+$LG_width: 720px;
+//размер MD
+$MD: 768px;
+$MD_width: 540px;
+//размер SM
+$SM: 576px;
+$SM_width: 100%;
+
+//colors
+
+$athensGray: #eaecef;
+$norway: #9db892;
+$heather: #b9c2cf;
+$greenMist: #ced6af;
+$springWood: #f7f8f3;
+$dingley: #6e774a;
+$moonMist: #dde1d6;
+$black: #000000;
+$goben: #778055;
+$silver: #c0c0c0;
+$white: #ffffff;
+$darkGray: #a9a9a9;
+$corn: #edb600;
+$tawnyPort: #6e244a;
+
+$blackTextColor: $black;
+$mainTextColor: $athensGray;
+$menuHover: $norway;
+$menuBorder: $heather;
+$inputBorder: $greenMist;
+$cartBg: $springWood;
+$checkoutBtn: $dingley;
+$navHomeColor: $moonMist;
+$aboutTextColor: $goben;
+$checkoutShopBg: $silver;
+$checkoutShopCartBg: $white;
+$checkoutShopBorder: $darkGray;
+$feedbackThirdImgStars: $corn;
+$feedbackSecondImgStars: $tawnyPort;

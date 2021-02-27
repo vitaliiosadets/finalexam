@@ -1,0 +1,132 @@
+.home {
+    &_wrapper {
+        padding-top: 350px;
+        padding-right: 400px;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+
+        @media screen and (max-width: $XL) {
+            padding-right: 100px;
+        }
+
+        @media screen and (max-width: $MD) {
+            padding-right: 0;
+        }
+    }
+
+    &__title {
+        padding-top: 20px;
+        font-weight: 400;
+        display: flex;
+        text-align: right;
+        line-height: 1.2;
+        max-width: 550px;
+        letter-spacing: 8px;
+        font-size: 55px;
+        text-transform: uppercase;
+        color: $mainTextColor;
+
+        @media screen and (max-width: $MD) {
+            font-size: 35px;
+        }
+    }
+
+    &__text {
+        color: $mainTextColor;
+        font-size: 24px;
+        padding-top: 10px;
+        letter-spacing: 4px;
+
+        @media screen and (max-width: $MD) {
+            font-size: 15px;
+        }
+    }
+
+    &__menu {
+        padding-top: 90px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    &__nav_one {
+        display: flex;
+        justify-content: flex-end;
+        letter-spacing: 2px;
+
+        &:hover {
+            text-transform: uppercase;
+            color: $athensGray;
+            padding: 15px;
+            border: 1px solid $menuHover;
+            margin-bottom: -32px;
+            display: block;
+            box-sizing: border-box;
+        }
+    }
+
+    &__nav_two {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 80px;
+        letter-spacing: 2px;
+
+        &:hover {
+            text-transform: uppercase;
+            color: $athensGray;
+            padding: 15px;
+            margin-top: 60px;
+            border: 1px solid $menuHover;
+            display: block;
+            box-sizing: border-box;
+        }
+    }
+
+    &__nav {
+        color: $navHomeColor;
+        font-size: 18px;
+        text-decoration: none;
+    }
+}
+
+.aside {
+    position: absolute;
+    bottom: 18%;
+    left: 5%;
+    transform: rotate(-90deg);
+
+    &__text {
+        text-transform: uppercase;
+        color: $mainTextColor;
+        font-weight: 400;
+        font-size: 24px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 50px;
+            height: 2px;
+            background-color: $mainTextColor;
+            top: 50%;
+            left: -43%;
+        }
+    }
+}
+
+.scroll {
+    position: absolute;
+    left: 50%;
+    animation: bounce 2s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    from,
+    to {
+        bottom: 7%;
+    }
+    50%,
+    60% {
+        bottom: 10%;
+    }
+}

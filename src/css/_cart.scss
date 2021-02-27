@@ -1,0 +1,158 @@
+.cart {
+    position: fixed;
+    display: none;
+    z-index: 1;
+    right: 0;
+    top: 80px;
+
+    &__wrapper {
+        padding: 20px 20px;
+        background: $checkoutShopCartBg;
+        border: 2px solid $menuHover;
+        max-width: 390px;
+        border-bottom: none;
+    }
+
+    &__about {
+        display: flex;
+    }
+
+    &__item {
+        display: flex;
+        max-width: 210px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-right: 20px;
+    }
+
+    &__product {
+        max-width: 170px;
+    }
+
+    &__img {
+        max-width: 110px;
+        height: 110px;
+    }
+
+    &__image {
+        width: 110px;
+        height: 110px;
+    }
+
+    &__price,
+    &__multiply,
+    &__product {
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    &__price,
+    &__multiply {
+        padding-top: 20px;
+    }
+
+    &__amount {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &_btn {
+        min-width: 30px;
+        min-height: 30px;
+        border: 2px solid $menuHover;
+        cursor: pointer;
+    }
+
+    &__button_plus {
+        border-bottom: none;
+        background: url("../image/plus.svg") no-repeat center;
+    }
+
+    &__button_minus {
+        border-top: none;
+        background: url("../image/minus.svg") no-repeat center;
+    }
+
+    &__button_amount {
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__price_total {
+        font-size: 18px;
+        font-weight: 400;
+        position: relative;
+        padding-top: 20px;
+        padding-bottom: 15px;
+        display: flex;
+        justify-content: flex-end;
+
+        &::before {
+            position: absolute;
+            width: 350px;
+            content: "";
+            height: 2px;
+            top: 0;
+            background: $menuHover;
+        }
+    }
+
+    &__checkout_form {
+        background: $checkoutShopCartBg;
+        border: 2px solid $menuHover;
+        border-top: none;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+
+    &__submit {
+        padding-top: 20px;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            width: 350px;
+            content: "";
+            height: 2px;
+            top: 0;
+            background: $menuHover;
+        }
+
+        &_text {
+            cursor: pointer;
+            font-size: 20px;
+            text-transform: uppercase;
+            color: $mainTextColor;
+            letter-spacing: 2px;
+            width: 350px;
+            height: 50px;
+            border: none;
+            background-color: $checkoutBtn;
+            padding-right: 50px;
+
+            &::after {
+                position: absolute;
+                content: "";
+                width: 60px;
+                height: 2px;
+                top: 65%;
+                right: 7%;
+                background: $mainTextColor;
+            }
+
+            &:hover {
+                background-color: $norway;
+            }
+        }
+    }
+}
+
+.cart.is-active {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,17 @@
+@mixin bgCover($img) {
+	background-image: url($img);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin: 0 auto;
+}
+
+@mixin fontFace($fontFamily, $fontWeight, $fontStyle, $fontPath) {
+	@font-face {
+		font-family: $fontFamily;
+		font-style: $fontStyle;
+		font-weight: $fontWeight;
+		src: url("#{$fontPath}.woff2") format("woff2"),
+			url("#{$fontPath}.woff") format("woff");
+	}
+}

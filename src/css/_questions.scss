@@ -1,0 +1,80 @@
+.questions {
+    background: $cartBg;
+
+    &__wrapper {
+        max-width: 570px;
+        margin: 0 auto;
+        padding-bottom: 100px;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: center;
+        padding-top: 120px;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 30px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    &__list {
+        padding-top: 30px;
+        position: relative;
+    }
+
+    &__question {
+        cursor: pointer;
+        position: relative;
+        padding-top: 20px;
+        border-bottom: 1px solid $checkoutBtn;
+        padding-left: 40px;
+        font-size: 18px;
+        color: $checkoutBtn;
+        letter-spacing: 2px;
+        padding-bottom: 20px;
+
+        &::before {
+            position: absolute;
+            content: "+";
+            top: 50%;
+            font-size: 50px;
+            transform: translateY(-50%);
+            left: 10px;
+        }
+    }
+
+    &__item {
+        padding-top: 20px;
+    }
+
+    &__response {
+        padding-left: 40px;
+        font-size: 18px;
+        color: $blackTextColor;
+        letter-spacing: 1.5px;
+        height: 0;
+        transition: 0.8s;
+        overflow: hidden;
+        border-bottom: 1px solid $checkoutBtn;
+    }
+}
+
+.questions__list .questions__item.is-active .questions__response {
+    padding-top: 20px;
+    height: 72px;
+}
+
+.questions__item.is-active ::before {
+    content: "-";
+}
+
+.questions__item.is-active .questions__response::before {
+    content: none;
+}
+
+.questions__item.is-active .questions__response_text::before {
+    content: none;
+}

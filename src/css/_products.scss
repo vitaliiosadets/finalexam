@@ -1,0 +1,105 @@
+.products {
+    background: $cartBg;
+
+    &__header {
+        padding-top: 150px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+
+    &__list {
+        padding-top: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__item {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        max-width: 600px;
+    }
+
+    &__info {
+        background: $checkoutShopCartBg;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid $menuHover;
+        border-bottom: none;
+    }
+
+    &__name {
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 30px 140px;
+    }
+
+    &__image {
+        max-width: 100%;
+        max-height: 100%;
+        padding-bottom: 20px;
+    }
+
+    &__checkout {
+        background: $checkoutShopBg;
+        max-width: 600px;
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid $checkoutShopBorder;
+        border-top: 2px solid $menuHover;
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__price {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 15px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    &__button {
+        position: relative;
+        font-weight: 40;
+        font-size: 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $mainTextColor;
+        background-color: $checkoutBtn;
+        border: none;
+        width: 160px;
+
+        &:hover {
+            background-color: $menuHover;
+        }
+
+        &_text {
+            position: absolute;
+            top: 30%;
+            left: 15%;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            background: $mainTextColor;
+            width: 50px;
+            height: 2px;
+            right: 20%;
+            top: 50%;
+        }
+    }
+}

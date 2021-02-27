@@ -1,0 +1,306 @@
+.header {
+    @include bgCover("../image/header.jpg");
+    height: 100vh;
+    position: relative;
+
+    &__burger {
+        display: none;
+
+        @media screen and (max-width: $MD) {
+            display: block;
+            position: relative;
+            width: 40px;
+            height: 30px;
+            z-index: 1;
+            left: 20px;
+            top: 20px;
+
+            &::before,
+            &::after {
+                position: absolute;
+                content: "";
+                background-color: $mainTextColor;
+                width: 100%;
+                height: 2px;
+                left: 0;
+                transition: all 0.5s ease 0s;
+            }
+
+            &::before {
+                top: 0;
+            }
+
+            &::after {
+                bottom: 0;
+            }
+
+            & > span {
+                background-color: $mainTextColor;
+                content: "";
+                position: absolute;
+                top: 15px;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                transition: all 0.5s ease 0s;
+            }
+        }
+    }
+
+    &__list {
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        min-height: 80px;
+        border-bottom: 1px solid $menuBorder;
+        width: 100%;
+    }
+}
+
+.header__list.active {
+    position: fixed;
+    z-index: 1;
+    background: $aboutTextColor;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    min-height: 80px;
+    border-bottom: 1px solid $menuBorder;
+    width: 100%;
+}
+
+//navigation menu styles.
+.nav {
+    padding-top: 30px;
+    padding-left: 55px;
+
+    @media screen and (max-width: $XL) {
+        padding-left: 20px;
+    }
+
+    @media screen and (max-width: $MD) {
+        position: fixed;
+        transition: all 0.7s ease 0s;
+        top: -110%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $aboutTextColor;
+        z-index: 0;
+    }
+
+    &__menu {
+        display: flex;
+
+        @media screen and (max-width: $MD) {
+            display: flex;
+            flex-direction: column;
+            font-size: 40px;
+            padding-left: 20px;
+        }
+    }
+
+    &__item {
+        padding-left: 30px;
+
+        @media screen and (max-width: $XL) {
+            padding-left: 15px;
+        }
+
+        @media screen and (max-width: $MD) {
+            padding-top: 20px;
+        }
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        @media screen and (max-width: $MD) {
+            &:first-child {
+                padding-left: 15px;
+            }
+        }
+    }
+
+    &__link {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        color: $mainTextColor;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-decoration: none;
+        outline: none;
+
+        &:hover {
+            border-bottom: 1px solid $menuHover;
+        }
+    }
+}
+
+//logo styles
+.logo {
+    position: relative;
+    padding-top: 25px;
+    padding-left: 230px;
+
+    @media screen and (max-width: $XL) {
+        padding-left: 10px;
+    }
+
+    @media screen and (max-width: $MD) {
+        padding-left: 120px;
+    }
+
+    @media screen and(max-width: $SM) {
+        padding-left: 20px;
+    }
+
+    &__link {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $mainTextColor;
+        font-size: 30px;
+    }
+}
+
+//options style
+.options {
+    display: flex;
+    padding-right: 35px;
+    position: relative;
+
+    @media screen and (max-width: $XL) {
+        padding-right: 10px;
+    }
+
+    &__auth {
+        padding: 30px 33px 0 33px;
+
+        @media screen and (max-width: $XL) {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 1px;
+            height: 80px;
+            background-color: $menuBorder;
+        }
+    }
+
+    &__login {
+        color: $mainTextColor;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        &:hover {
+            border-bottom: 1px solid $menuHover;
+        }
+    }
+}
+
+.search {
+    padding: 20px 28px 0 20px;
+    position: relative;
+
+    @media screen and (max-width: $XL) {
+        padding-right: 0;
+    }
+
+    @media screen and (max-width: $MD) {
+        display: none;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1px;
+        height: 80px;
+        background-color: $menuBorder;
+    }
+
+    &__input {
+        width: 250px;
+        height: 30px;
+        outline: none;
+        border: 2px solid $inputBorder;
+        @media screen and (max-width: $XL) {
+            width: 150px;
+        }
+    }
+
+    &__button {
+        position: relative;
+        padding-left: 50px;
+        color: $mainTextColor;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border: none;
+        background: transparent url("../image/search.svg") 15px no-repeat;
+        height: 30px;
+    }
+}
+
+.checkout {
+    padding-top: 30px;
+    padding-left: 30px;
+    position: relative;
+
+    @media screen and (max-width: $XL) {
+        padding-left: 10px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1px;
+        height: 80px;
+        background-color: $menuBorder;
+    }
+
+    &__cart {
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: $mainTextColor;
+
+        &:hover {
+            border-bottom: 1px solid $menuHover;
+        }
+    }
+}
+
+.header__burger.is-active::before {
+    transform: rotate(45deg);
+    position: absolute;
+    transition: all 0.5ms ease-in-out;
+    top: 29px;
+}
+
+.header__burger.is-active::after {
+    transform: rotate(-45deg);
+    position: absolute;
+    bottom: 0;
+}
+
+.header__burger.is-active > span {
+    transform: scale(0);
+}
+
+.nav.is-active {
+    top: 10%;
+}

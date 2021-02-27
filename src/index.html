@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>cbd</title>
+        <link rel="icon" href="./image/favicon.png" type="image/png" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body class="page">
+        <!--header-->
+        <header class="header container">
+            <div class="header__list container">
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__menu">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#productsId">Products</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#questionsId">Faqs</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#contactId">
+                                Contact us</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <div class="logo">
+                    <a class="logo__link" href="#">Cbd</a>
+                </div>
+                <div class="options">
+                    <div class="options__auth">
+                        <a href="#" class="options__login">Login</a>
+                    </div>
+                    <div class="search">
+                        <form action="#" class="search__form">
+                            <input
+                                type="text"
+                                name="text"
+                                class="search__input"
+                                id="search_btn"
+                            />
+                            <input
+                                class="search__button"
+                                type="submit"
+                                name="submit_btn"
+                                value="Search"
+                            />
+                        </form>
+                    </div>
+                    <div class="checkout">
+                        <a class="checkout__cart">
+                            Cart
+                            <span class="checkout__value">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--cart-->
+            <div class="cart">
+                <ul class="cart__wrapper"></ul>
+                <div class="cart__checkout_form">
+                    <div class="cart__price_total"></div>
+                    <div class="cart__submit">
+                        <button class="cart__submit_text" type="submit">
+                            Proceed to checkout
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="home home_wrapper">
+                <h2 class="home__title">Enhancing Life Excelling in Care</h2>
+                <p class="home__text">Choose Wisely. Choose CBD.</p>
+                <div class="home__menu">
+                    <a class="home__nav home__nav_one" href="#productsId"
+                        >Start shopping &rarr;</a
+                    >
+                    <a class="home__nav home__nav_two" href="#productsId"
+                        >See all products &rarr;
+                    </a>
+                </div>
+            </div>
+            <div class="aside">
+                <h2 class="aside__text">Cbd potion health</h2>
+            </div>
+            <div class="scroll">
+                <a class="scroll__down" href="#aboutId">
+                    <img
+                        src="./image/arrow.svg"
+                        alt="Scroll Down"
+                        class="scroll__down_img"
+                    />
+                </a>
+            </div>
+        </header>
+        <main>
+            <!--about-->
+            <section class="about container" id="aboutId">
+                <div class="about__wrapper about_center">
+                    <div class="about__header">
+                        <img
+                            class="about__image"
+                            src="./image/wearewhatweare.png"
+                            alt="we are what we are"
+                        />
+                    </div>
+                    <div class="about__titles">
+                        <a
+                            href="#"
+                            class="about__text is-active"
+                            data-tab="tab1"
+                        >
+                            What is CBD?
+                        </a>
+                        <a href="#" class="about__text" data-tab="tab2"
+                            >Benefits</a
+                        >
+                        <a href="#" class="about__text" data-tab="tab3">
+                            Our Difference
+                        </a>
+                    </div>
+                    <div class="tabs">
+                        <div class="about__info tab is-active tab1">
+                            <div class="about__content">
+                                <h3 class="about__subtitle">
+                                    What is and how it works
+                                </h3>
+                                <p class="about__subtext">
+                                    CBD is short for cannabidiol. It is a
+                                    phytocannabinoid found in hemp and known for
+                                    supporting the body and mind in many ways.*
+                                    Charlotte’s Web products have cannabinoids
+                                    with CBD extract.
+                                </p>
+                                <p class="about__subtext">
+                                    Not to be confused with oil from hemp seeds
+                                    (which doesn’t contain cannabinoids), CBD
+                                    comes from the flowers and leaves of the
+                                    hemp plant.
+                                </p>
+                                <p class="about__subtext">
+                                    Why does CBD work? The human body has a vast
+                                    network of receptors, the endocannabinoid
+                                    system.
+                                </p>
+                            </div>
+                            <div class="about__images">
+                                <img
+                                    src="./image/aboutOne.jpg"
+                                    alt="Feel free"
+                                    class="about__img"
+                                />
+                                <img
+                                    src="./image/aboutTwo.jpg"
+                                    alt="Feel free"
+                                    class="about__img"
+                                />
+                            </div>
+                        </div>
+                        <div class="about__info tab tab2">
+                            <div class="about__content">
+                                <h3 class="about__subtitle">
+                                    CBD oil side effects
+                                </h3>
+                                <p class="about__subtext">
+                                    CBD oil usually doesn’t have any major risks
+                                    for users. However, side effects are
+                                    possible. These include: depression,
+                                    dizziness, hallucinations, low blood
+                                    pressure, withdrawal symptoms, such as
+                                    irritability and insomnia. More human
+                                    studies are needed to fully understand the
+                                    range of risks and side effects that CBD oil
+                                    may cause. Studies of CBD oil aren’t common.
+                                    This is partially because Schedule 1
+                                    substances like cannabis are highly
+                                    regulated, causing some obstacles for
+                                    researchers. With the legalization of
+                                    marijuana products, more research is
+                                    possible, and more answers will come.
+                                </p>
+                            </div>
+                            <div class="about__images">
+                                <img
+                                    src="./image/aboutThree.jpg"
+                                    alt="Feel free"
+                                    class="about__img"
+                                />
+                                <img
+                                    src="./image/aboutFour.jpg"
+                                    alt="Feel free"
+                                    class="about__img"
+                                />
+                            </div>
+                        </div>
+                        <div class="about__info tab tab3">
+                            <div class="about__content">
+                                <h3 class="about__subtitle">Differences</h3>
+                                <p class="about__subtext">
+                                    The main difference between CBD
+                                    (cannabidiol) and THC (tetrahydrocannabinol)
+                                    is that CBD does not induce a high whereas
+                                    THC does.
+                                </p>
+                                <p class="about__subtext">
+                                    THC, the psychoactive component of
+                                    marijuana, induces sleep or drowsiness (a
+                                    common effect of most strains of marijuana),
+                                    whereas CBD keeps you up and increases
+                                    energy. And THC is responsible for the
+                                    feeling of being high or body-high.
+                                </p>
+                            </div>
+                            <div class="about__images">
+                                <img
+                                    src="./image/aboutFive.jpg"
+                                    alt="Feel free"
+                                    class="about__img"
+                                />
+                                <img
+                                    src="./image/aboutSix.jpg"
+                                    alt="Feel free"
+                                    class="about__img"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--products-->
+            <section class="products container" id="productsId">
+                <div class="products__wrapper">
+                    <div class="products__header">
+                        <h3 class="products__title">Cbd Featured products</h3>
+                    </div>
+                    <div class="products__list">
+                        <div class="products__item">
+                            <div class="products__info">
+                                <p class="products__name">
+                                    Cbd 500 mg orange flavor tincture
+                                </p>
+                                <img
+                                    src="./image/productOne.jpg"
+                                    alt="Orange Flavor Tincture"
+                                    class="products__image"
+                                />
+                            </div>
+                            <div class="products__checkout">
+                                <span class="products__price">49.99</span>
+                                <button class="products__button">
+                                    <span class="products__button_text"
+                                        >Shop</span
+                                    >
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__info">
+                                <p class="products__name">
+                                    Black Ice Cbd muscle rub 200 mg
+                                </p>
+                                <img
+                                    src="./image/productTwo.jpg"
+                                    alt="Black Ice Muscle"
+                                    class="products__image"
+                                />
+                            </div>
+                            <div class="products__checkout">
+                                <span class="products__price">49.99</span>
+                                <button class="products__button">
+                                    <span class="products__button_text"
+                                        >Shop</span
+                                    >
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__info">
+                                <p class="products__name">
+                                    Cbd+Curcumin Coffee 750 mg
+                                </p>
+                                <img
+                                    src="./image/productThree.jpg"
+                                    alt="Cbd Coffee"
+                                    class="products__image"
+                                />
+                            </div>
+                            <div class="products__checkout">
+                                <span class="products__price">79.99</span>
+                                <button class="products__button">
+                                    <span class="products__button_text"
+                                        >Shop</span
+                                    >
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__info">
+                                <p class="products__name">
+                                    Cbd Oil 500 mg kiki health
+                                </p>
+                                <img
+                                    src="./image/productFour.jpg"
+                                    alt="Cbd Kiki Oil"
+                                    class="products__image"
+                                />
+                            </div>
+                            <div class="products__checkout">
+                                <span class="products__price">69.99</span>
+                                <button class="products__button">
+                                    <span class="products__button_text"
+                                        >Shop</span
+                                    >
+                                </button>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__info">
+                                <p class="products__name">
+                                    Cbd Oil 500 mg supmedi
+                                </p>
+                                <img
+                                    src="./image/productFive.jpg"
+                                    alt="Cbd Oil Supmedi"
+                                    class="products__image"
+                                />
+                            </div>
+                            <div class="products__checkout">
+                                <span class="products__price">59.99</span>
+                                <button class="products__button">
+                                    <span class="products__button_text"
+                                        >Shop</span
+                                    >
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--questions-->
+            <section class="questions container" id="questionsId">
+                <div class="questions__wrapper">
+                    <div class="questions__header">
+                        <h2 class="questions__title">
+                            Frequently asked questions
+                        </h2>
+                    </div>
+                    <div class="questions__list">
+                        <div class="questions__item">
+                            <div class="questions__question">
+                                What is cannabidiol (Cbd)?
+                            </div>
+                            <div class="questions__response">
+                                <p class="questions__response_text">
+                                    Cannabidiol (CBD) is an active ingredient in
+                                    cannabis derived from the hemp plant. It may
+                                    help treat conditions like pain, insomnia,
+                                    and anxiety.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="questions__item">
+                            <div class="questions__question">
+                                Is Hemb-Derived Cannabidiol (CBD) Legal?
+                            </div>
+                            <div class="questions__response">
+                                <p class="questions__response_text">
+                                    Because CBD from hemp has no psychoactive
+                                    effects, the purchase, sales, or possession
+                                    of hemp CBD products are completely legal in
+                                    all 50 States.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="questions__item">
+                            <div class="questions__question">
+                                Are there any negative side effects?
+                            </div>
+                            <div class="questions__response">
+                                <p class="questions__response_text">
+                                    Studies into cannabidiol specifically,
+                                    however, have found few or no negative side
+                                    effects. This means that CBD oil may be a
+                                    good option for people who cannot tolerate
+                                    the side effects of other medications for
+                                    anxiety, including addiction.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="questions__item">
+                            <div class="questions__question">
+                                Do you offer a return policy?
+                            </div>
+                            <div class="questions__response">
+                                <p class="questions__response_text">
+                                    We offer free returns or exchanges within 30
+                                    days of purchase
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--feedback-->
+            <section class="feedbacks container">
+                <div class="feedbacks__slider">
+                    <div class="feedbacks__item feedbacks_bg-one">
+                        <span class="feedbacks__aside">cbd every day</span>
+                        <span class="feedbacks__score feedbacks__score_bgOne"
+                            >&#9733;&#9733;&#9733;&#9733;&#9733;
+                        </span>
+                        <p class="feedbacks__text">
+                            I have tried another product after using this one
+                            successfully, and I am Back for good! The flavour,
+                            the lightness of the oil and the health benefits I
+                            have gotten with this oil are amazing!
+                        </p>
+                        <span class="feedbacks__author">Mark J.</span>
+                    </div>
+                    <div class="feedbacks__item feedbacks_bg-two">
+                        <span class="feedbacks__score feedbacks__score_bgTwo"
+                            >&#9733;&#9733;&#9733;&#9733;
+                        </span>
+                        <p class="feedbacks__text">
+                            This is really amazing. This oil changed my life. I
+                            feel so comfy about it. I get rid of my depression
+                            and other things.
+                        </p>
+                        <span class="feedbacks__author">Tony T.</span>
+                        <!-- <div class="paginator-center text-color text-center">
+                            <h6>VER MAS LANZAMIENTOS</h6>
+                            <ul>
+                                <li class="prev"></li>
+                                <li class="next"></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                    <div class="feedbacks__item feedbacks_bg-three">
+                        <span class="feedbacks__score feedbacks__score_bgThree"
+                            >&#9733;&#9733;&#9733;&#9733;&#9733;
+                        </span>
+                        <p class="feedbacks__text feedbacks__text_three">
+                            This is great that i've found this website. Im so
+                            happy about that. Talking about product - it is very
+                            helpful for me.
+                        </p>
+                        <span class="feedbacks__author">Amanda L.</span>
+                    </div>
+                </div>
+            </section>
+            <!--footer-->
+            <footer class="footer container" id="contactId">
+                <div class="footer__wrapper">
+                    <div class="footer__header">
+                        <a href="#" class="footer__title">CBD</a>
+                    </div>
+                    <div class="footer__info">
+                        <div class="policy">
+                            <ul class="policy__list">
+                                <li class="policy__item">
+                                    <a href="#" class="policy__text">
+                                        Privacy policy
+                                    </a>
+                                </li>
+                                <li class="policy__item">
+                                    <a href="#" class="policy__text">
+                                        Terms of use
+                                    </a>
+                                </li>
+                                <li class="policy__item">
+                                    <a href="#" class="policy__text">
+                                        Return policy
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="social">
+                            <a
+                                class="social__image"
+                                href="https://uk-ua.facebook.com/"
+                            >
+                                <svg
+                                    class="social__img"
+                                    role="img"
+                                    viewBox="0 0 320 512"
+                                    width="15"
+                                    height="24"
+                                >
+                                    <path
+                                        fill="#6e774a"
+                                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                                        class=""
+                                    ></path>
+                                </svg>
+                            </a>
+                            <a
+                                class="social__image"
+                                href="https://twitter.com/?lang=uk"
+                            >
+                                <svg
+                                    class="social__img"
+                                    role="img"
+                                    viewBox="0 0 512 512"
+                                    width="24"
+                                    height="24"
+                                >
+                                    <path
+                                        fill="#6e774a"
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                    ></path>
+                                </svg>
+                            </a>
+                            <a
+                                class="social__image"
+                                href="https://www.youtube.com/"
+                            >
+                                <svg
+                                    class="social__img"
+                                    role="img"
+                                    viewBox="0 0 576 512"
+                                    width="26"
+                                    height="26"
+                                >
+                                    <path
+                                        fill="#6e774a"
+                                        d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+                                    ></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="shipping">
+                            <ul class="shipping__list">
+                                <li class="shipping__item">
+                                    <a href="#" class="shipping__text">
+                                        Shipping info
+                                    </a>
+                                </li>
+                                <li class="shipping__item">
+                                    <a href="#" class="shipping__text">
+                                        Returns / exchanges
+                                    </a>
+                                </li>
+                                <li class="shipping__item">
+                                    <a href="#" class="shipping__text">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="subscribe">
+                        <h3 class="subscribe__text">subscribe to newsletter</h3>
+                        <form action="#" class="subscribe__form">
+                            <input
+                                type="email"
+                                class="subscribe__email"
+                                placeholder="   Email"
+                            />
+                            <input
+                                class="subscribe__button"
+                                type="submit"
+                                name="submit"
+                                value="&rarr;"
+                            />
+                        </form>
+                        <p class="subscribe__copyright">
+                            &copy; 2021. CBD Health.
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
